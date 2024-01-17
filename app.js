@@ -18,7 +18,7 @@ app.get("/", async (req, res) => {
     }
 });
 
-app.post("/transfer", (req, res) => {
+app.post("/transfer", async (req, res) => {
     try {
         const receiver = req.body.receiver;
         const amount = req.body.amount;
@@ -39,7 +39,7 @@ app.post("/transfer", (req, res) => {
         }
 
         // Perform the transfer
-        const response = transferAmount(receiver, amount);
+        const response = await transferAmount(receiver, amount);
 
         // Add the address to the array to prevent future transfers
         jsonData.addressArray.push(receiver);

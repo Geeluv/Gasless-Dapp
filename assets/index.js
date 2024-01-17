@@ -40,8 +40,8 @@ function fetchTxns() {
         displayTx.innerHTML = allTxns.map(txn => (`
         <div>
             <span><b>status</b>=> ${txn.status} ✅</span>
-            <span><b>tx-hash</b>=> ${(txn.hash).slice(0, 40) + ". . ."}</span>
-            <span><b>amount</b>=> ${(txn.transferAmount).slice(0, 6) + " MATIC"}</span>
+            <span><b>tx-hash</b>=> ${(txn.hash)?.slice(0, 40) + ". . ."}</span>
+            <span><b>amount</b>=> ${(txn.transferAmount)?.slice(0, 6) + " MATIC"}</span>
             <span><b>receiver</b>=> ${txn.to}</span>
             <span><b>timestamp</b>=> ${(new Date(txn.timestamp * 1000)).toLocaleTimeString("default")}</span>
             <span><b>explorer</b>=> <a href=${txn.explore}>🔗 Go to explorer</a></span>
