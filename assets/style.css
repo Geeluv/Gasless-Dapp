@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100;0,9..40,200;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;0,9..40,800;1,9..40,100;1,9..40,200;1,9..40,400;1,9..40,500;1,9..40,600;1,9..40,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+.tx-wrapper {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    padding-top: 5rem;
+    flex-direction: column;
+    align-items: center;
+    gap: 4rem;
+    font-family: 'DM Sans', sans-serif;
+}
+
+#sendtx {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    font-family: 'DM Sans', sans-serif;
+}
+
+#sendtx input {
+    padding: 0.7rem;
+    min-width: 270px;
+    border-radius: 0.2rem;
+    border: 1px solid #c0c0c0;
+    font-family: unset;
+}
+
+#sendtx input:focus {
+    outline-color: rgb(151, 112, 196);
+}
+
+#sendtx button {
+    padding: 0.7rem;
+    background-color: rgb(100, 60, 146);
+    border: none;
+    border-radius: 0.2rem;
+    color: #fff;
+    cursor: pointer;
+    font-family: unset;
+}
+
+.displaytx {
+    display: flex;
+    gap: 1.2rem;
+    font-size: 10.2px;
+    width: 100%;
+    flex-wrap: wrap;
+    height: 100%;
+    opacity: 0.3;
+    transition: opacity 0.8s;
+}
+
+.displaytx:hover {
+    opacity: 1;
+    transition: opacity 0.8s;
+}
+
+.displaytx div {
+    padding: 0.5rem;
+    border: 1px solid #cccccc;
+    display: flex;
+    flex-direction: column;
+    word-break: break-all;
+    gap: 0.5rem;
+    height: 98px;
+    overflow-y: hidden;
+    max-width: 400px;
+}
+
+.displaytx div:hover {
+    height: fit-content;
+}
+
+b {
+    background-color: rgb(96, 59, 139);
+    color: #fff;
+    padding: unset;
+    padding: 0.1rem 0.5rem;
+    border-radius: 0.2rem;
+    font-weight: 400;
+    margin-right: 0.2rem;
+    min-width: fit-content;
+}
+
+span {
+    background-color: rgb(232, 212, 255);
+    width: fit-content;
+    padding: 0.3rem;
+    border-radius: 0.2rem;
+    display: flex;
+    align-items: center;
+    padding-right: 0.5rem;
+    flex-wrap: wrap;
+    font-weight: bold;
+    color: rgb(122, 112, 134);
+    border: 1px solid rgba(95, 87, 105, 0.192);
+}
+
+a {
+    color: rgb(80, 69, 94);
+    margin-left: 0.2rem;
+}
