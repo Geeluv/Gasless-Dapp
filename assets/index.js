@@ -15,8 +15,8 @@ sendBtn.addEventListener("click", async (e) => {
         },
         body: JSON.stringify({ receiver: address.value, amount: Number(amount.value) })
     });
+    const txDetails = await response.json();
     if (response.ok) {
-        const txDetails = await response.json();
         console.log(txDetails)
         alert("Transfer successful");
         let getTxDetails = fetchTxns();
@@ -28,7 +28,7 @@ sendBtn.addEventListener("click", async (e) => {
         }
 
     } else {
-        alert("Transfer failed")
+        alert(txDetails.message)
     }
     sendBtn.innerText = "Send"
     window.location.reload()

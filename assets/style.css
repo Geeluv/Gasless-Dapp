@@ -63,9 +63,10 @@
     flex-direction: column;
     word-break: break-all;
     gap: 0.5rem;
-    height: 98px;
+    /* height: 98px; */
     overflow-y: hidden;
     max-width: 400px;
+    height: fit-content;
 }
 
 .displaytx div:hover {
